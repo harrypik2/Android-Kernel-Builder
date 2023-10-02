@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "Raphael-KernelSU-Proton-release",
       "repo": "https://github.com/harrypik2/SnowKsuKernel",
-      "branch": "miui",
+      "branch": "T",
       "device": "raphael",
       "defconfig": "raphael_defconfig"
     },
