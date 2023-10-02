@@ -10,7 +10,7 @@
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://gitlab.com/ElectroPerf/atom-x-clang",
+        "repo": "https://gitlab.com/ElectroPerf/atom-x-clang.git",
         "branch": "master",
         "name": "atom-x-clang",
         "binPath": ["bin"]
