@@ -1,9 +1,9 @@
 [
   {
     "kernelSource": {
-      "name": "Raphael-KernelSU-Proton-release",
-      "repo": "https://github.com/harrypik2/Snow",
-      "branch": "r04v3",
+      "name": "Raphael-Kernel-Proton-release",
+      "repo": "https://github.com/harrypik2/maou_kernel_raphael",
+      "branch": "S",
       "device": "raphael",
       "defconfig": "raphael_defconfig"
     },
@@ -37,7 +37,7 @@
       }
     },
     "AnyKernel3": {
-      "use": false,
+      "use": true,
       "release": false,
       "repo": "https://github.com/harrypik2/AnyKernel3",
       "branch": "master"
