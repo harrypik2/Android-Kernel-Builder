@@ -1,13 +1,13 @@
 [
   {
     "kernelSource": {
-      "name": "bxsj-KernelSU-Proton-release",
-      "repo": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource",
-      "branch": "cmi-r-oss",
-      "device": "cmi",
-      "defconfig": "cmi_user_defconfig"
+      "name": "Raphael-KernelSU-Proton-release",
+      "repo": "https://github.com/harrypik2/SnowKsuKernel",
+      "branch": "miui",
+      "device": "raphael",
+      "defconfig": "raphael_defconfig"
     },
-    "withKernelSU": true,
+    "withKernelSU": false,
     "toolchains": [
       {
         "repo": "https://github.com/kdrag0n/proton-clang",
@@ -39,8 +39,8 @@
     "AnyKernel3": {
       "use": true,
       "release": true,
-      "repo": "https://github.com/wdnmdkiki/AnyKernel3/",
-      "branch": "cmi"
+      "repo": "https://github.com/harrypik2/AnyKernel3",
+      "branch": "master"
     }
   }
 ]
