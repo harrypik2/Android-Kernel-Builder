@@ -1,7 +1,7 @@
 [
   {
     "kernelSource": {
-      "name": "Raphael-KernelSU-Proton-release",
+      "name": "Raphael-KernelSU-AtomX-release",
       "repo": "https://github.com/harrypik2/SnowKsuKernel",
       "branch": "T",
       "device": "raphael",
@@ -23,17 +23,17 @@
       "externalCommand": {
         "CROSS_COMPILE": "aarch64-linux-gnu-",
         "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
-        "LD": "ld.lld",
-        "AR": "llvm-ar",
-        "NM": "llvm-nm",
-        "OBJCOPY": "llvm-objcopy",
-        "OBJDUMP": "llvm-objdump",
-        "READELF": "llvm-readelf",
-        "OBJSIZE": "llvm-size",
-        "STRIP": "llvm-strip",
-        "LDGOLD": "llvm-ld.gold",
-        "LLVM_AR": "llvm-ar",
-        "LLVM_DIS": "llvm-dis"
+        "LD": "atom-x-clang/bin/aarch64-linux-gnu-ld",
+        "AR": "atom-x-clang/binllvm-ar",
+        "NM": "atom-x-clang/binllvm-nm",
+        "OBJCOPY": "atom-x-clang/binllvm-objcopy",
+        "OBJDUMP": "atom-x-clang/binllvm-objdump",
+        "READELF": "atom-x-clang/binllvm-readelf",
+        "OBJSIZE": "atom-x-clang/binllvm-size",
+        "STRIP": "atom-x-clang/bin/llvm-strip",
+        "LDGOLD": "atom-x-clang/bin/llvm-ld.gold",
+        "LLVM_AR": "atom-x-clang/bin/llvm-ar",
+        "LLVM_DIS": "atom-x-clang/bin/llvm-dis"
       }
     },
     "AnyKernel3": {
