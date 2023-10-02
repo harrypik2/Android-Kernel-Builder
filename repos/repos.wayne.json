@@ -42,7 +42,7 @@
       }
     },
     "AnyKernel3": {
-      "use": false,
+      "use": true,
       "release": false,
       "repo": "https://github.com/harrypik2/AnyKernel3",
       "branch": "master"
