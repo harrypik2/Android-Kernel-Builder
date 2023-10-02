@@ -1,51 +1,37 @@
 [
-  {
-    "kernelSource": {
-      "name": "Raphael_KernelSU_Google",
-      "repo": "https://github.com/harrypik2/SnowKsuKernel",
-      "branch": "T",
-      "device": "raphael",
-      "defconfig": "raphael_defconfig"
-    },
-    "withKernelSU": false,
-    "toolchains": [
-      {
-        "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r498229b.tar.gz",
-        "name": "clang",
-        "binPath": ["./bin"]
+    {
+      "kernelSource": {
+        "name": "Raphael_KernelSU_Google",
+        "repo": "https://github.com/harrypik2/SnowKsuKernel",
+        "branch": "T",
+        "device": "raphael",
+        "defconfig": "raphael_defconfig"
       },
-      {
-        "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/refs/heads/android11-release.tar.gz",
-        "name": "gcc",
-        "binPath": ["bin"]
+      "withKernelSU": false,
+      "toolchains": [
+
+        {
+          "url": "http://ftp.tsukuba.wide.ad.jp/software/gcc/releases/gcc-13.2.0/gcc-13.2.0.tar.gz",
+          "name": "gcc",
+          "binPath": ["bin"]
+        }
+      ],
+      "ccache": true,
+      "params": {
+        "ARCH": "arm64",
+        "CC": "gcc/bin/clang",
+        "externalCommand": {
+          "CLANG_TRIPLE": "gcc/bin/aarch64-linux-android-",
+          "CROSS_COMPILE": "gcc/bin/aarch64-linux-android-",
+          "CROSS_COMPILE_ARM32": "gcc/bin/arm-linux-androideabi-"
+        }
+      },
+      "AnyKernel3": {
+        "use": true,
+        "release": false,
+        "repo": "https://github.com/harrypik2/AnyKernel3",
+        "branch": "master"
       }
-    ],
-    "ccache": true,
-    "params": {
-      "ARCH": "arm64",
-      "CC": "clang/bin/clang",
-      "externalCommand": {
-        "CLANG_TRIPLE": "gcc/bin/aarch64-linux-android-",
-        "CROSS_COMPILE": "gcc/bin/aarch64-linux-android-",
-        "CROSS_COMPILE_ARM32": "gcc/bin/arm-linux-androideabi-",
-        "LD": "clang/bin/ld.lld",
-        "AR": "clang/bin/llvm-ar",
-        "NM": "clang/bin/llvm-nm",
-        "OBJCOPY": "clang/bin/llvm-objcopy",
-        "OBJDUMP": "clang/bin/llvm-objdump",
-        "READELF": "clang/bin/llvm-readelf",
-        "OBJSIZE": "clang/bin/llvm-size",
-        "STRIP": "clang/bin/llvm-strip",
-        "LDGOLD": "clang/bin/aarch64-linux-gnu-ld.gold",
-        "LLVM_AR": "clang/bin/llvm-ar",
-        "LLVM_DIS": "clang/bin/llvm-dis"
-      }
-    },
-    "AnyKernel3": {
-      "use": true,
-      "release": false,
-      "repo": "https://github.com/harrypik2/AnyKernel3",
-      "branch": "master"
     }
-  }
-]
+  ]
+  
