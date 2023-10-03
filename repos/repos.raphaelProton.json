@@ -2,8 +2,8 @@
   {
     "kernelSource": {
       "name": "Raphael-Kernel-Proton-release",
-      "repo": "https://github.com/harrypik2/maou_kernel_raphael",
-      "branch": "S",
+      "repo": "https://github.com/harrypik2/kernel_xiaomi_raphael",
+      "branch": "T",
       "device": "raphael",
       "defconfig": "raphael_defconfig"
     },
